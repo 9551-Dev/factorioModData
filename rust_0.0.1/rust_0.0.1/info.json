@@ -1,9 +1,0 @@
-{
-    "name": "rust",
-    "version": "0.0.1",
-    "title": "rust",
-    "author": "9551Dev",
-    "description": "your machines rust and get damaged by pollution",
-    "factorio_version": "1.1",
-    "dependencies": ["base"]
-}
