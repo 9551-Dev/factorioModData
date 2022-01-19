@@ -22,14 +22,19 @@ local updateEntityList = function()
     end
 end
 script.on_init(updateEntityList)
-script.on_event(defines.events.on_built_entity,function(event)
-    local entity = event.created_entity
+local function addEntity(event)
+    local entity = event.created_entity or event.entity or event.destination
     if checkListProtos[entity.type] then
         if not global.rust.map[entity.surface.index] then global.rust.map[entity.surface.index] = {} end
         table.insert(global.rust.map[entity.surface.index],entity)
         game.print("Added to list")
     end
 end)
+script.on_event(defines.events.on_built_entity,addEntity)
+script.on_event(defines.events.on_entity_cloned,addEntity)
+script.on_event(defines.events.on_robot_built_entity,addEntity)
+script.on_event(defines.events.script_raised_built,addEntity)
+script.on_event(defines.events.script_raised_revive,addEntity)
 script.on_nth_tick(900,function(event)
     for surfaceName,surface in pairs(global.rust.map) do
         for k,v in pairs(surface) do
