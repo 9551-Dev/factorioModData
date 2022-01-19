@@ -42,7 +42,7 @@ data:extend({
     {
         name="rust:max-damage-n-time",
         type = "int-setting",
-        default_value = 10,
+        default_value = 5,
         minimum_value = 1,
         maximum_value = 100,
         setting_type = "startup",
