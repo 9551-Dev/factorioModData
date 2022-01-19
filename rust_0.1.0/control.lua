@@ -46,7 +46,7 @@ script.on_nth_tick(settings.startup["rust:update-rate"].value,function(event)
             if v.valid then
                 local damagePMinMax = v.prototype.max_health/100
                 local riseRate = settings.startup["rust:rise-rate"].value/10
-                local pollution = game.surfaces[surfaceName].get_pollution(v.position)
+                local pollution = (game.surfaces[surfaceName].get_pollution(v.position))/2
                 if pollution > settings.startup["rust:min-pollution-to-damage"].value then
                     local rate = math.min(math.abs(pollution^riseRate/100^(riseRate*2)),settings.startup["rust:max-damage-n-time"].value/10)
                     v.health = v.health - (damagePMinMax*rate*settings.startup["rust:damage-multiplier"].value)
