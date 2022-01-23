@@ -1,0 +1,18 @@
+data:extend({
+    {
+        type="recipe",
+        name="uranium-underground-belt-recipe",
+        category="crafting-with-fluid",
+        ingredients={
+            {type="fluid",name="lubricant",amount=100},
+            {name="steel-plate",amount=20},
+            {name="uranium-235",amount=1},
+            {name="uranium-belt-item",amount=4},    
+            {name="iron-gear-wheel",amount=160}
+        },
+        enabled=false,
+        subgroup="belt",
+        result_count=1,
+        result="uranium-underground-belt-item"
+    }
+})
