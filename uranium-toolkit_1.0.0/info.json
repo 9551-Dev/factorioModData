@@ -1,9 +1,0 @@
-{
-    "title": "uranium toolkit",
-    "name": "uranium-toolkit",
-    "description": "adds bunch of logistics pointed uranium based entities",
-    "author": "9551Dev",
-    "version": "1.0.0",
-    "factorio_version": "1.1",
-    "dependencies": ["base"]
-}
