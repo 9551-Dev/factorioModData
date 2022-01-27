@@ -1,0 +1,9 @@
+{
+    "name": "allnightorio",
+    "version": "1.0.0",
+    "title": "all night factorio",
+    "author": "9551Dev",
+    "description": "allows you to play factorio in all dark",
+    "factorio_version": "1.1",
+    "dependencies": ["base"]
+}
