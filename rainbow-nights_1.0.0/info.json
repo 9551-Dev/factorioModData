@@ -1,0 +1,9 @@
+{
+    "name": "rainbow-nights",
+    "title": "rainbow nights",
+    "description": "makes your nights rainbow! planning to add rainbow lamps",
+    "factorio_version": "1.1",
+    "version": "1.0.0",
+    "author": "9551Dev",
+    "dependencies": ["base"]
+}
