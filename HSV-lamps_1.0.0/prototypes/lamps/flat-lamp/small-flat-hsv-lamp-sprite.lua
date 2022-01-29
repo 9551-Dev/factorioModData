@@ -1,0 +1,12 @@
+data:extend({
+    {
+        type="sprite",
+        name="hsv-flat-lamp-sprite",
+        filename="__HSV-lamps__/graphics/lamps/flat-lamp/light.png",
+        apply_runtime_tint=true,
+        scale=0.5,
+        width=58,
+        height=58,
+        priority="very-low"
+    }
+})
