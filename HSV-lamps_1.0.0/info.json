@@ -1,9 +1,0 @@
-{
-    "name": "HSV-lamps",
-    "title": "HSV lamps",
-    "author": "9551Dev",
-    "version": "1.0.0",
-    "description": "adds fully color supported lamps that work with color Hue satorion and Lum (value)",
-    "factorio_version": "1.1",
-    "dependencies": ["base"]
-}
