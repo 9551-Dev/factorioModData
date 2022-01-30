@@ -1,0 +1,12 @@
+data:extend({
+    {
+        type="sprite",
+        name="hsv-lamp-on-sprite",
+        filename="__HSV-lamps__/graphics/lamps/lamp-top.png",
+        apply_runtime_tint=true,
+        scale=0.5,
+        width=90,
+        height=78,
+        priority="extra-high"
+    }
+})
