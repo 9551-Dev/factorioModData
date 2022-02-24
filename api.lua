@@ -122,7 +122,6 @@ local function getPowerAmount(string)
     return string:match("(%d.-)%a")
 end
 
-
 local vectorAdd = function(n1,n2)
 end
 
